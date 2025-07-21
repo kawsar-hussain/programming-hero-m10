@@ -55,8 +55,12 @@ nav {
 }
 
 ul {
-  display: flex;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 50px;
+  justify-content: space-between;
+
+  /* padding-right: 0; */
 }
 
 ul a {
@@ -71,6 +75,7 @@ ul a:hover {
 .search,
 .cart {
   font-size: 24px;
+  padding-right: 0;
 }
 
 .banner {
