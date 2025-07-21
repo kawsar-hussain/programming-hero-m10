@@ -1,0 +1,21 @@
+header,
+main {
+  padding: 0 10px;
+}
+/* common classes */
+.flex-col {
+  flex-direction: column;
+}
+
+/* header start */
+nav {
+  padding: 30px 0;
+}
+
+/* ! justify-content isn't working here */
+ul {
+  margin-top: 20px;
+  /*? justify-content: space-around; */
+}
+
+/* header end */

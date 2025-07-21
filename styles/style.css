@@ -22,10 +22,46 @@ main {
   padding: 0 160px;
 }
 
+section {
+  margin-bottom: 100px;
+}
+
 /* variables */
 :root {
   --primary-color: #e02c6d;
-  --background-color: #aaaaaa;
-  --dark1: #6c6c6c;
+  --dark1: #3a3a3a;
   --dark2: #787885;
 }
+
+/* header start here */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.nav-title {
+  font-size: 24px;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+}
+
+ul a {
+  color: #3a3a3a;
+}
+
+ul a:hover {
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.search,
+.cart {
+  font-size: 24px;
+}
+
+/* header end here */
