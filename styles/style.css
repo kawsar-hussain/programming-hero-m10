@@ -29,10 +29,19 @@ section {
 /* variables */
 :root {
   --primary-color: #e02c6d;
-  --dark1: #3a3a3a;
+  --dark1: #525252;
   --dark2: #787885;
 }
 
+/* common classes */
+.btn {
+  padding: 10px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+}
 /* header start here */
 nav {
   display: flex;
@@ -64,4 +73,41 @@ ul a:hover {
   font-size: 24px;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__info {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner__title {
+  font-size: 45px;
+  margin-bottom: 16px;
+}
+
+.banner__desc {
+  color: var(--dark1);
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.banner i {
+  margin-left: 8px;
+}
+
+.banner__info button {
+  align-self: flex-start;
+}
+
+.banner__img {
+  background: url(/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 /* header end here */

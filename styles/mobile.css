@@ -3,7 +3,8 @@ main {
   padding: 0 10px;
 }
 /* common classes */
-.flex-col {
+nav,
+.banner {
   flex-direction: column;
 }
 
@@ -18,4 +19,31 @@ ul {
   /*? justify-content: space-around; */
 }
 
+.banner {
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.banner__title {
+  padding: 0 60px;
+  margin-bottom: 10px;
+}
+
+.banner__desc {
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.banner__info button {
+  align-self: center;
+}
+.banner__img {
+  background: none;
+  padding: 30px 0;
+}
+
+.banner__img img {
+  width: 70%;
+  margin: 0 auto;
+}
 /* header end */
