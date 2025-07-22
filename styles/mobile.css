@@ -2,6 +2,10 @@ header,
 main {
   padding: 0 10px;
 }
+
+section {
+  margin-bottom: 15px;
+}
 /* common classes */
 nav,
 .banner {
@@ -10,7 +14,7 @@ nav,
 
 /* header start */
 nav {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 /* ! justify-content isn't working here */
@@ -48,4 +52,68 @@ ul {
   width: 70%;
   margin: 0 auto;
 }
+
+.brand {
+  border: none;
+  flex-wrap: wrap;
+}
+
+.brand__img {
+  flex: 0 0 calc(50% - 5px);
+  margin-bottom: 5px;
+  height: 100px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(212, 212, 212);
+}
 /* header end */
+
+/* main start here */
+.collection__title {
+  margin-bottom: 15px;
+}
+
+.collection__container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.product:hover {
+  scale: 1;
+  transition: 0s;
+}
+
+.see-more-div {
+  margin-top: 20px;
+}
+
+.see-more i {
+  margin-left: 3px;
+}
+
+.feature {
+  flex-direction: column-reverse;
+  margin-bottom: 30px;
+}
+
+.feature__title {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.feature__info {
+  margin-left: 0;
+  text-align: center;
+}
+
+.feature__btn {
+  align-self: center;
+  margin-bottom: 30px;
+}
+/* main end here */
+
+footer {
+  padding: 50px 0;
+}

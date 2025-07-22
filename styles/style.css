@@ -41,6 +41,7 @@ section {
   font-weight: bold;
   border: none;
   border-radius: 100px;
+  cursor: pointer;
 }
 /* header start here */
 nav {
@@ -115,4 +116,147 @@ ul a:hover {
   background-position: center;
   background-size: cover;
 }
+
+.brand {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgb(212, 212, 212);
+  border-bottom: 1px solid rgb(212, 212, 212);
+  padding: 40px 0;
+}
 /* header end here */
+
+/* main start here */
+
+/* collection start */
+.collection__title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.collection__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.product {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.177);
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+.product:hover {
+  scale: 1.02;
+  transition: 0.2s;
+}
+
+.product h3 {
+  padding: 10px 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.product h4 {
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.product__rating {
+  display: flex;
+  padding: 5px 0;
+}
+.product__rating img {
+  width: 16px;
+  height: 16px;
+}
+
+.product__rating p {
+  margin-left: 10px;
+}
+
+.collection p {
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  color: var(--dark2);
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.see-more-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.see-more {
+  border: none;
+  color: var(--primary-color);
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.see-more i {
+  margin-left: 5px;
+}
+/* collection end */
+
+/* feature start  */
+.feature {
+  display: flex;
+}
+
+.feature__info {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature__title {
+  font-size: 38px;
+}
+
+.feature__desc {
+  margin: 20px 0;
+}
+
+.feature__btn {
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.feature__btn i {
+  margin-left: 5px;
+}
+/* feature end  */
+/* main end here */
+
+/* footer start here */
+footer {
+  background-color: #0a0826;
+  color: rgb(224, 224, 224);
+  text-align: center;
+  padding: 80px 0;
+  line-height: 1.7;
+}
+
+.footer__title {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  margin-top: 10px;
+  word-spacing: 15px;
+}
+
+.footer__link i:hover {
+  color: var(--primary-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* footer end here */
